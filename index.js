@@ -120,7 +120,7 @@ Use the removeLastFlavor function below to do the following:
 
 function removeLastFlavor( arr ){
 
-    arr.pop([])
+    arr.pop()
     return arr
 }
 
@@ -159,10 +159,10 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(array, string){
     for(let i = 0; i < array.length; i++){
-      if(originalFlavors[i] === string){
-        let updateArray = originalFlavors.indexOf(string)
-        originalFlavors.splice(updateArray,1)
-        return originalFlavors
+      if(array[i] === string){
+        let updateArray = array.indexOf(string)
+        array.splice(updateArray,1)
+        return array
       }
     }
   }
